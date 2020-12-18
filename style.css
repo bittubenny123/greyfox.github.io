@@ -1,0 +1,32 @@
+/* 
+body {
+    font: 14px Verdana, sans-serif;
+}
+h1 {
+    color: #996600;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+} */
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+footer{
+    background-color: #303846;
+    position:absolute;
+    width:100%;
+ 
+ }

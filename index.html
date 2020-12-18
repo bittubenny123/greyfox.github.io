@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web proj</title>
+    <link rel = "icon" href ="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon"> 
+    <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="stylesheet" href="style.css" type="text/css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
+<script src="./app.js"></script>
+</head>
+
+<body >
+<div appml-include-html="./nav.html" class="container-fluid sticky-top bg-white"></div>
+<div class="-bg-dark  -text-white">
+<h1 class="text-center display-1">Customers</h1>
+
+<div class="container" >
+
+<div appml-data="customers.js" appml-controller="myController">
+  
+
+  <table class="table table-striped table-bordered  table-hover">
+     
+<thead class="thead-dark">
+  <tr >
+    <th>Customer</th>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+</thead>
+
+  <tr appml-repeat="records">
+    <td>{{CustomerName}}</td>
+    <td>{{City}}</td>
+    <td>{{Country}}</td>
+  </tr>
+ </table>
+
+
+</div>
+</div>
+</div>
+ 
+</body>
+<footer class="text-white " bg-color="303846">
+  <div appml-include-html="./footer.html"></div>
+
+  
+</footer>
+</html>
