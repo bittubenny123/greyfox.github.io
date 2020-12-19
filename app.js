@@ -1,3 +1,19 @@
+
+
+if('serviceWorker' in navigator){
+
+    console.log("service worker supported");
+   
+    window.addEventListener('load', ()=>{
+        navigator.serviceWorker.register("./ServiceWorker.js")
+        .then(reg => console.log("service worker registration successfull"))
+        .catch(err => console.log(`error occupied : ${err }`))
+        
+    })
+
+}
+
+
 function myController($appml) {
 
     if ($appml.message == "ready") {
